@@ -1,0 +1,639 @@
+{
+  "version": "12.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "LearningStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "LearningStack.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/LearningStack": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.5fa6a1c13cfacca8d3c509dae6a921ef3e26fee18675eaa9f44c5f14366e2e50",
+              "id": "5fa6a1c13cfacca8d3c509dae6a921ef3e26fee18675eaa9f44c5f14366e2e50",
+              "packaging": "zip",
+              "sourceHash": "5fa6a1c13cfacca8d3c509dae6a921ef3e26fee18675eaa9f44c5f14366e2e50",
+              "s3BucketParameter": "AssetParameters5fa6a1c13cfacca8d3c509dae6a921ef3e26fee18675eaa9f44c5f14366e2e50S3BucketE36895B0",
+              "s3KeyParameter": "AssetParameters5fa6a1c13cfacca8d3c509dae6a921ef3e26fee18675eaa9f44c5f14366e2e50S3VersionKeyA7FA7923",
+              "artifactHashParameter": "AssetParameters5fa6a1c13cfacca8d3c509dae6a921ef3e26fee18675eaa9f44c5f14366e2e50ArtifactHashBBE43AA9"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/core/lib/construct-compat.ts:252:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:161:23)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "LearningStack.addFileAsset (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-lambda/lib/code.ts:180:20)",
+              "new Function (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-lambda/lib/function.ts:327:29)",
+              "new LearningStack (/Users/saikumarkg/Desktop/type/learning/lib/learning-stack.ts:17:26)",
+              "Object.<anonymous> (/Users/saikumarkg/Desktop/type/learning/bin/learning.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/LearningStack/Hello/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Hello4A628BD4",
+            "trace": [
+              "new Table (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:678:18)",
+              "new LearningStack (/Users/saikumarkg/Desktop/type/learning/lib/learning-stack.ts:12:19)",
+              "Object.<anonymous> (/Users/saikumarkg/Desktop/type/learning/bin/learning.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/LearningStack/DynamoLambdaHandler/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoLambdaHandlerServiceRole4C867B01",
+            "trace": [
+              "new Role (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-iam/lib/role.ts:199:18)",
+              "new Function (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-lambda/lib/function.ts:307:31)",
+              "new LearningStack (/Users/saikumarkg/Desktop/type/learning/lib/learning-stack.ts:17:26)",
+              "Object.<anonymous> (/Users/saikumarkg/Desktop/type/learning/bin/learning.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/LearningStack/DynamoLambdaHandler/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoLambdaHandlerServiceRoleDefaultPolicy2B40B090",
+            "trace": [
+              "new Policy (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-iam/lib/policy.ts:89:22)",
+              "Role.addToPrincipalPolicy (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-iam/lib/role.ts:236:28)",
+              "Function.addToPrincipal (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-iam/lib/grant.ts:92:61)",
+              "Table.combinedGrant (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:522:29)",
+              "Table.grantReadWriteData (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:349:17)",
+              "new LearningStack (/Users/saikumarkg/Desktop/type/learning/lib/learning-stack.ts:28:11)",
+              "Object.<anonymous> (/Users/saikumarkg/Desktop/type/learning/bin/learning.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/LearningStack/DynamoLambdaHandler/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoLambdaHandlerFB6EB814",
+            "trace": [
+              "new Function (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-lambda/lib/function.ts:369:35)",
+              "new LearningStack (/Users/saikumarkg/Desktop/type/learning/lib/learning-stack.ts:17:26)",
+              "Object.<anonymous> (/Users/saikumarkg/Desktop/type/learning/bin/learning.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/LearningStack/AssetParameters/5fa6a1c13cfacca8d3c509dae6a921ef3e26fee18675eaa9f44c5f14366e2e50/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters5fa6a1c13cfacca8d3c509dae6a921ef3e26fee18675eaa9f44c5f14366e2e50S3BucketE36895B0",
+            "trace": [
+              "new FileAssetParameters (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "LearningStack.addFileAsset (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-lambda/lib/code.ts:180:20)",
+              "new Function (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-lambda/lib/function.ts:327:29)",
+              "new LearningStack (/Users/saikumarkg/Desktop/type/learning/lib/learning-stack.ts:17:26)",
+              "Object.<anonymous> (/Users/saikumarkg/Desktop/type/learning/bin/learning.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/LearningStack/AssetParameters/5fa6a1c13cfacca8d3c509dae6a921ef3e26fee18675eaa9f44c5f14366e2e50/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters5fa6a1c13cfacca8d3c509dae6a921ef3e26fee18675eaa9f44c5f14366e2e50S3VersionKeyA7FA7923",
+            "trace": [
+              "new FileAssetParameters (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "LearningStack.addFileAsset (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-lambda/lib/code.ts:180:20)",
+              "new Function (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-lambda/lib/function.ts:327:29)",
+              "new LearningStack (/Users/saikumarkg/Desktop/type/learning/lib/learning-stack.ts:17:26)",
+              "Object.<anonymous> (/Users/saikumarkg/Desktop/type/learning/bin/learning.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/LearningStack/AssetParameters/5fa6a1c13cfacca8d3c509dae6a921ef3e26fee18675eaa9f44c5f14366e2e50/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters5fa6a1c13cfacca8d3c509dae6a921ef3e26fee18675eaa9f44c5f14366e2e50ArtifactHashBBE43AA9",
+            "trace": [
+              "new FileAssetParameters (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "LearningStack.addFileAsset (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-lambda/lib/code.ts:180:20)",
+              "new Function (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-lambda/lib/function.ts:327:29)",
+              "new LearningStack (/Users/saikumarkg/Desktop/type/learning/lib/learning-stack.ts:17:26)",
+              "Object.<anonymous> (/Users/saikumarkg/Desktop/type/learning/bin/learning.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/LearningStack/programBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "programBucketBD27AFBD",
+            "trace": [
+              "new Bucket (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:713:22)",
+              "new LearningStack (/Users/saikumarkg/Desktop/type/learning/lib/learning-stack.ts:31:24)",
+              "Object.<anonymous> (/Users/saikumarkg/Desktop/type/learning/bin/learning.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/LearningStack/hello-api/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "helloapi4446A35B",
+            "trace": [
+              "new RestApi (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:463:22)",
+              "new LearningStack (/Users/saikumarkg/Desktop/type/learning/lib/learning-stack.ts:38:17)",
+              "Object.<anonymous> (/Users/saikumarkg/Desktop/type/learning/bin/learning.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/LearningStack/hello-api/CloudWatchRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "helloapiCloudWatchRoleD13E913E",
+            "trace": [
+              "new Role (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-iam/lib/role.ts:199:18)",
+              "RestApi._configureCloudWatchRole (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:289:18)",
+              "new RestApi (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:481:12)",
+              "new LearningStack (/Users/saikumarkg/Desktop/type/learning/lib/learning-stack.ts:38:17)",
+              "Object.<anonymous> (/Users/saikumarkg/Desktop/type/learning/bin/learning.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/LearningStack/hello-api/Account": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "helloapiAccountD8C38BCE",
+            "trace": [
+              "RestApi._configureCloudWatchRole (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:294:22)",
+              "new RestApi (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:481:12)",
+              "new LearningStack (/Users/saikumarkg/Desktop/type/learning/lib/learning-stack.ts:38:17)",
+              "Object.<anonymous> (/Users/saikumarkg/Desktop/type/learning/bin/learning.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/LearningStack/hello-api/Deployment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "helloapiDeploymentFA89AEEC980654a529f826a232e06459ccd74d9c",
+            "trace": [
+              "new Deployment (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-apigateway/lib/deployment.ts:34:21)",
+              "RestApi._configureDeployment (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:318:32)",
+              "new RestApi (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:484:10)",
+              "new LearningStack (/Users/saikumarkg/Desktop/type/learning/lib/learning-stack.ts:38:17)",
+              "Object.<anonymous> (/Users/saikumarkg/Desktop/type/learning/bin/learning.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/LearningStack/hello-api/DeploymentStage.prod/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "helloapiDeploymentStageprod677E2C4F",
+            "trace": [
+              "new Stage (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-apigateway/lib/stage.ts:136:22)",
+              "RestApi._configureDeployment (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:328:30)",
+              "new RestApi (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:484:10)",
+              "new LearningStack (/Users/saikumarkg/Desktop/type/learning/lib/learning-stack.ts:38:17)",
+              "Object.<anonymous> (/Users/saikumarkg/Desktop/type/learning/bin/learning.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/LearningStack/hello-api/Endpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "helloapiEndpoint0E4D8D32",
+            "trace": [
+              "RestApi._configureDeployment (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:333:7)",
+              "new RestApi (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:484:10)",
+              "new LearningStack (/Users/saikumarkg/Desktop/type/learning/lib/learning-stack.ts:38:17)",
+              "Object.<anonymous> (/Users/saikumarkg/Desktop/type/learning/bin/learning.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/LearningStack/hello-api/Default/hello/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "helloapihello4AA00177",
+            "trace": [
+              "new Resource (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:342:22)",
+              "RootResource.addResource (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:91:12)",
+              "RootResource.resourceForPath (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:270:23)",
+              "new LearningStack (/Users/saikumarkg/Desktop/type/learning/lib/learning-stack.ts:41:8)",
+              "Object.<anonymous> (/Users/saikumarkg/Desktop/type/learning/bin/learning.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/LearningStack/hello-api/Default/hello/GET/ApiPermission.LearningStackhelloapi0DDEA034.GET..hello": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "helloapihelloGETApiPermissionLearningStackhelloapi0DDEA034GEThello8220AEE5",
+            "trace": [
+              "Function.addPermission (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:130:5)",
+              "LambdaIntegration.bind (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:41:18)",
+              "new Method (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:98:36)",
+              "Resource.addMethod (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "new LearningStack (/Users/saikumarkg/Desktop/type/learning/lib/learning-stack.ts:42:8)",
+              "Object.<anonymous> (/Users/saikumarkg/Desktop/type/learning/bin/learning.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/LearningStack/hello-api/Default/hello/GET/ApiPermission.Test.LearningStackhelloapi0DDEA034.GET..hello": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "helloapihelloGETApiPermissionTestLearningStackhelloapi0DDEA034GEThelloD75AFE6D",
+            "trace": [
+              "Function.addPermission (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:130:5)",
+              "LambdaIntegration.bind (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:49:20)",
+              "new Method (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:98:36)",
+              "Resource.addMethod (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "new LearningStack (/Users/saikumarkg/Desktop/type/learning/lib/learning-stack.ts:42:8)",
+              "Object.<anonymous> (/Users/saikumarkg/Desktop/type/learning/bin/learning.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/LearningStack/hello-api/Default/hello/GET/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "helloapihelloGETE6A58337",
+            "trace": [
+              "new Method (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:116:22)",
+              "Resource.addMethod (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "new LearningStack (/Users/saikumarkg/Desktop/type/learning/lib/learning-stack.ts:42:8)",
+              "Object.<anonymous> (/Users/saikumarkg/Desktop/type/learning/bin/learning.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/LearningStack/HTTP API URL": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HTTPAPIURL",
+            "trace": [
+              "new LearningStack (/Users/saikumarkg/Desktop/type/learning/lib/learning-stack.ts:44:5)",
+              "Object.<anonymous> (/Users/saikumarkg/Desktop/type/learning/bin/learning.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/saikumarkg/Desktop/type/learning/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/LearningStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/core/lib/app.ts:64:45)",
+              "Object.onceWrapper (events.js:482:26)",
+              "process.emit (events.js:375:28)",
+              "process.emit (domain.js:470:12)",
+              "process.emit (/Users/saikumarkg/Desktop/type/learning/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ],
+        "/LearningStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:31:27)",
+              "/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/saikumarkg/Desktop/type/learning/node_modules/@aws-cdk/core/lib/app.ts:64:45)",
+              "Object.onceWrapper (events.js:482:26)",
+              "process.emit (events.js:375:28)",
+              "process.emit (domain.js:470:12)",
+              "process.emit (/Users/saikumarkg/Desktop/type/learning/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "LearningStack"
+    }
+  }
+}
